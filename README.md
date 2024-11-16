@@ -1,0 +1,1 @@
+# Diminuindo-n-veis-de-cinza-de-uma-imagem
