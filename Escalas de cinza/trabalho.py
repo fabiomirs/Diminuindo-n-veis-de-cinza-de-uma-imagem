@@ -12,10 +12,6 @@ niveis_cinza = [256, 128, 64, 32, 16, 8, 4, 2]
 
 # Função para reduzir a intensidade dos níveis de cinza
 def reduzir_niveis_cinza(imagem_array, niveis):
-    fator = 256 // niveis
-    imagem_reduzida = (imagem_array // fator) * fator
-    return imagem_reduzida
-
     fator = 255 / (niveis - 1)
     imagem_reduzida = np.round(imagem_array / 255 * (niveis - 1)) * fator
     return imagem_reduzida.astype(np.uint8)
